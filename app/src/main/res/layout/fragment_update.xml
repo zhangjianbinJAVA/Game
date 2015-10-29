@@ -1,0 +1,124 @@
+<RelativeLayout
+    android:id="@+id/relative_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragments.UpdateFragment"
+    >
+
+
+    <TextView
+        android:id="@+id/textView1_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:text="序号:"/>
+
+    <TextView
+        android:id="@+id/textView1_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView1_id"
+        android:text="玩家："
+
+        />
+
+    <EditText
+        android:id="@+id/editText2_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView1_player"
+        android:layout_toEndOf="@+id/textView1_player"
+        android:hint="请输入玩家名称"
+        />
+
+    <TextView
+        android:id="@+id/textView1_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText2_player"
+        android:text="分数:"/>
+
+    <EditText
+        android:id="@+id/editText2_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText2_player"
+        android:layout_alignStart="@+id/editText2_player"
+        android:layout_below="@+id/editText2_player"
+        android:hint="请输入玩家分数"
+        />
+
+    <TextView
+        android:id="@+id/textView1_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText2_score"
+        android:text="关卡:"/>
+
+    <EditText
+        android:id="@+id/editText2_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/editText2_score"
+        android:layout_below="@+id/editText2_score"
+        android:hint="请输入关卡数"
+        />
+
+    <TextView
+        android:id="@+id/textView2_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView1_player"/>
+
+    <TextView
+        android:id="@+id/textView_into"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText2_level"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="115dp"
+        android:text="提示：这里为更新信息"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:text="更新"
+
+
+            />
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button_save"
+            android:layout_weight="1"
+            android:text="取消"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
